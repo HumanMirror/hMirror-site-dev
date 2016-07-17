@@ -1,0 +1,448 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 38px;
+    text-align: left;
+}
+
+h1, h2 {
+    line-height: 40px;
+    font-family: inherit;
+    text-rendering: optimizelegibility;
+}
+
+h1 {
+    font-size: 46px;
+	color: rgb(51, 51, 51);
+    font-weight: 500;
+	font-family: 'Open Sans',sans-serif;
+}
+
+h2 strong {
+    color: #278DC5;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* .navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+} */
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+@media (min-width: 768px) {
+.navbar-nav {
+    float: right !important;
+    margin: 0;
+}
+}
+.navbar-inverse { 
+    background-color: #FFF;
+    border-bottom: 1px solid #c5c5c5 !important;
+}
+
+.header_wrap_container {
+    width: 100%;
+}
+
+.page_wrap_container {
+    max-width: 978px;
+    margin: auto;
+    clear: both;
+}
+
+@media (max-width: 977px) {
+.navbar .container {
+    padding: 0 15px;
+}
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #278DC5 !important;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: #278DC5;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    font-size: 20px;
+	padding: 15px 0px;
+}
+
+/* .contactus {
+	color: #ffdb99 !important;
+}
+ */
+.login {
+color: #278DC5 !important;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 2px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* sections */
+
+section {
+    background: url(../images/bg-shadow.png) no-repeat top center;
+	/* background-color: #f7f7f7; */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+	display: block;
+}
+
+.no-touch #about .page_wrap_container {
+    padding-top: 175px;
+}
+
+section .page_wrap_container {
+    padding: 85px 0 70px;
+    overflow: auto;
+}
+
+@media (max-width: 977px) {
+.el-mobile {
+    display: block;
+}
+}
+
+.text {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+#services {
+    background: url(../images/bg-shadow.png) no-repeat top center;
+}
+
+/* #clients {
+    background: url(../images/bg-shadow.png) no-repeat top center, url(../images/bg-shadow-btm.png) no-repeat bottom center;
+    background-color: #f7f7f7;
+}
+#contact {
+    background: url(../images/bg-shadow-btm.png) no-repeat bottom center;
+} */
+
+.customer_logo{
+	padding-left: 33px;
+}
+/* contact */
+#map {
+	width: 900px;
+	height: 270px;
+	float: left;
+    margin-left: 37px;
+}
+
+@media (max-width: 963px) {
+#map {
+	width: 700px;
+	height: 270px;
+	float: left;
+    margin-left: 13%;
+}	
+}
+
+@media (max-width: 768px) {
+#map {
+	width: 550px;
+	height: 270px;
+	float: left;
+    margin-left: 13%;
+}	
+}
+
+@media (max-width: 640px) {
+#map {
+	width: 460px;
+	height: 270px;
+	float: left;
+    margin-left: 13%;
+}	
+}
+
+@media (max-width: 480px) {
+#map {
+	width: 350px;
+	height: 270px;
+	float: left;
+    margin-left: 13%;
+}	
+}
+
+@media (max-width: 420px) {
+#map {
+	width: 290px;
+	height: 270px;
+	float: left;
+    margin-left: 13%;
+}	
+}
+
+@media (max-width: 375px) {
+#map {
+	width: 280px;
+	height: 200px;
+	float: left;
+    margin-left: 10%;
+}	
+}
+
+.col {
+    float: left;
+    padding: 30px 30px 0 0;
+    width: 33%;
+}
+
+.col h3 {
+	font-family: inherit;
+    text-rendering: optimizelegibility;
+    border-bottom: 1px solid #278DC5;
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0 0 30px;
+    padding: 0 0 20px;
+}
+
+#contact_form {
+    width: 96%;
+}
+
+.col form input {
+    color: rgb(85, 85, 85);
+    font-size: 15px;
+    margin: 0 0 15px;
+    padding: 9px 10px;
+    width: 100%;
+}
+
+input, textarea {
+    -webkit-appearance: none;
+    background-color:  #5a5a5a;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 100;
+}
+.col form textarea {
+    color: rgb(85, 85, 85);
+    font-size: 15px;
+    margin: 0 0 15px;
+    min-height: 100px;
+    padding: 9px 10px;
+    width: 100%;
+	height: 50px;
+}
+
+.col form button {
+    background: #278DC5;
+    border: 0;
+    color: #fff;
+	border-radius: 3px;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 0;
+    padding: 8px 10px;
+    transition: opacity .25s ease-in-out;
+}
+
+.col a {
+	
+}
+
+.col-sm-7{
+    padding-left: 0px;
+}
+
+.col-sm-5{
+    padding-right: 3px;
+}
+
+.progress {
+    height: auto;
+    position: relative;
+}
+
+.progress-bar {
+    background: rgb(85, 85, 85);
+    padding: 3px 20px;
+    text-align: left;
+    transition: width 2s ease-in-out;
+}
+
+.progress-bar span {
+    color: rgb(85, 85, 85);
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+
+.btn {
+    width: 50% !important;
+    background-color: #278DC5;
+    float: right;
+    color: white !important;
+}
+
+.visible {
+    visibility: visible;
+}
+
+
+.col-md-6 {
+    width: 100%;
+	padding-left: 0px;
+}
+
+.social {
+    float: left;
+    padding: 30px 0 0;
+    width: 33%;
+}
+
+.social a {
+    color: #5a5a5a;
+    display: block;
+    height: 33px;
+    line-height: 32px;
+    margin: 0 0 15px;
+    text-decoration: none;
+}
+
+.social h3 {
+    font-family: inherit;
+    text-rendering: optimizelegibility;
+    border-bottom: 1px solid #278DC5;
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0 0 30px;
+    padding: 0 0 20px;
+}
+
+
+/*footer*/
+/* footer section */
+#footer {
+    background-color: #9d9d9d !important;
+    background: none;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+   /* margin-top: 20px;*/
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 27px;
+    line-height: 1.4;
+    color: #278DC5;
+    font-weight: 500;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
